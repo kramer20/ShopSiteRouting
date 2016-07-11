@@ -1,10 +1,10 @@
 (function() {
     'use strict';
     angular
-        .module('todos', ['ui.router'])
+        .module('shopSite', ['ui.router'])
         .config(function($stateProvider, $urlRouterProvider) {
 
-	  	$urlRouterProvider.otherwise("/404");
+	  	$urlRouterProvider.otherwise("/");
 
 	  	$stateProvider
 	    .state('home', {
@@ -20,14 +20,27 @@
 		      },
 		  },
 	    })
-	    .state('contact', {
-      	url: '/contact',
+	    .state('category', {
+      	url: '/category',
       	views: {
       		'main': {
-		        templateUrl: '../views/contact.html',
+		        templateUrl: '../views/category.html',
+		         controller: 'CategoryController',
+		        controllerAs: 'category'
 		      },
 		      'nav': {
-		        templateUrl: '../views/contact-nav.html',
+		        templateUrl: '../views/partials/nav.html',
+		      },
+		  },
+	    })
+	    .state('list', {
+      	url: '/list',
+      	views: {
+      		'main': {
+		        templateUrl: '../views/list.html',
+		      },
+		      'nav': {
+		        templateUrl: '../views/partials/nav.html',
 		      },
 		  },
 	    });

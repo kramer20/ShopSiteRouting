@@ -1,47 +1,23 @@
-<form ng-submit="main.submit()">
-                <input type='text' class='new-todo' placeholder='What needs to be done?' ng-model='main.form.item'>
-            </form>
+<h2>Ride a bike that you like</h2>
 
-            <ul class='items' ng-repeat='toDo in main.data | filter: {isComplete:main.active}'>
-                <!-- example of existing item (incomplete)-->
-                <li>
-                    <article ng-class="{completed: toDo.isComplete}">
-                        <button ng-click="main.checkOff(toDo)" class='check' ng-model="toDo.completed"></button>
-                        <p>{{toDo.item}}</p>     
-                        <button ng-click="main.deleteItem(toDo)" class='delete'>X</button>
-                    </article>
-                </li>
-               
-                <!-- example of completed item
-                <li>
-                    <article class='completed'>
-                        <button class='check'></button>
-                        <p class='complete'>learn css</p>
-                        <input type='text' class='edit-todo' value='learn css'>
-                        <button class='delete'>X</button>
-                    </article>
-                </li>
-                -->
-                <!-- example of item currently being edited
-                <li>
-                    <article class='editing'>
-                        <button class='check'></button>
-                        <p>learn javascript</p>
-                        <input type='text' class='edit-todo' value='learn javascript'>
-                        <button class='delete'>X</button>
-                    </article>
-                </li>
-                -->
-            </ul>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Find your bike...">
+    <span class="input-group-btn">
+   		<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </span>
+</div>
 
-            <footer>
-                <p class='remaining'><span class='incomplete-items'>{{main.remaining()}} </span>items left</p>
-                <nav>
-                    <ul>
-                        <li><button ng-click="main.activeTabItems()" class='show-all active'>All</button></li>
-                        <li><button ng-click="main.activeTabItems('false')" class='show-active'>Active</button></li>
-                        <li><button ng-click="main.activeTabItems('true')" class='show-completed'>Completed</button></li>
-                    </ul>
-                </nav>
-                <button ng-click="main.clearAll()" class='clear'>Clear completed</button>
-</footer>
+<div class="featured">
+	<h3>This Weeks Featured Bike</h3>
+		<div ng-repeat="bike in main.data">
+			<ul class="featuredBike">
+				<li class="featuredBikeList">{{bike.name}}
+				</li>
+				<li class="featuredBikeList">{{bike.price}}
+				</li>
+				<li class="featuredBikeList"><img ng-src="{{bike.image}}">
+				</li>
+			</ul>
+		</div>
+</div>
+
