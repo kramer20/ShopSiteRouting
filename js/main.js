@@ -25,7 +25,7 @@
       	views: {
       		'main': {
 		        templateUrl: '../views/category.html',
-		         controller: 'CategoryController',
+		        controller: 'CategoryController',
 		        controllerAs: 'category'
 		      },
 		      'nav': {
@@ -38,6 +38,8 @@
       	views: {
       		'main': {
 		        templateUrl: '../views/list.html',
+		        controller: 'ListController',
+		        controllerAs: 'list'
 		      },
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
