@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="todos">
+<head>
+      <meta charset='utf-8'>
+        <title>Angular To Do List</title>
+
+        <meta name='description' content='A simple app to track TODO items'>
+        <meta name='author' content=''>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	<!--Google Font-->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<!--Bootstrap CDN-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--CSS style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+</head>
+
+<body ng-controller='MainController as main'>
+        <header>
+            <h1>todos</h1>
+        </header>
+
+        <div ui-view="nav">
+        </div>
+
+        <main class="clearfix" ui-view="main">
+            
+        </main>
+
+        <footer>
+        	<H4>Hello world</H4>
+        </footer>
+
+	<!--link to JS file-->
+	<script src="js/main.js"></script>
+	<script src="js/factories/logger.js"></script>
+	<script src="js/controllers/mainControl.js"></script>
+</body>
+</html>
