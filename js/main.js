@@ -13,13 +13,16 @@
       		'main': {
 		        templateUrl: '../views/home.html',
 		        controller: 'MainController',
-		        controllerAs: 'main'
+		        controllerAs: 'controller'
 		      },
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
 		      },
 		      'search': {
 		        templateUrl: '../views/partials/search.html',
+		      },
+		       'footer': {
+		        templateUrl: '../views/partials/footer.html',
 		      },
 		  },
 	    })
@@ -29,10 +32,13 @@
       		'main': {
 		        templateUrl: '../views/category.html',
 		        controller: 'CategoryController',
-		        controllerAs: 'category'
+		        controllerAs: 'controller'
 		      },
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
+		      },
+		      'footer': {
+		        templateUrl: '../views/partials/footer.html',
 		      },
 		  },
 	    })
@@ -42,10 +48,13 @@
       		'main': {
 		        templateUrl: '../views/list.html',
 		        controller: 'ListController',
-		        controllerAs: 'list'
+		        controllerAs: 'controller'
 		      },
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
+		      },
+		      'footer': {
+		        templateUrl: '../views/partials/footer.html',
 		      },
 		  },
 	    })
@@ -55,10 +64,13 @@
       		'main': {
 		        templateUrl: '../views/detail.html',
 		        controller: 'DetailController',
-		        controllerAs: 'detail'
+		        controllerAs: 'controller'
 		      },
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
+		      },
+		      'footer': {
+		        templateUrl: '../views/partials/footer.html',
 		      },
 		  },
 	    });

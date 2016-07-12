@@ -2,10 +2,10 @@
 
 <div class="featured">
 	<h3>This Weeks Featured Bike</h3>
-		<div ng-repeat="bike in main.data">
-				<img class="featuredBike" ng-src="{{bike.image}}">
-				<p class="featuredBikeList">{{bike.name}}</p>
-				<p class="featuredBikeList">{{bike.price | currency}}</p>
+		<div>
+				<img class="featuredBike" ng-src="{{controller.data.image}}">
+				<p class="featuredBikeList">{{controller.data.name}}</p>
+				<p class="featuredBikeList">{{controller.data.price | currency}}</p>
 			
 		</div>
 </div>

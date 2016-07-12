@@ -1,9 +1,9 @@
 <h2>More Information</h2>
 <div class="row">
-	<div class="col-md-6 list"  ng-repeat="detail in detail.data">
+	<div class="col-md-6 list">
 		<ul class="detailsList">
-			<li class="detailItem">{{detail.price | currency}}</li>
-			<li class="detailItem">{{detail.description}}</li>
+			<li class="detailItem">{{detail.data.price | currency}}</li>
+			<li class="detailItem">{{detail.data.description}}</li>
 		</ul>	
 	</div>
 </div>

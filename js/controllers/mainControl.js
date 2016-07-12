@@ -13,7 +13,7 @@
         image: "http://www.minipocketrockets.com/products/mini-dirt-bikes.jpg"
        }
 
-       vm.data = [bike];
+       vm.data = bike;
       
     })
 })();
