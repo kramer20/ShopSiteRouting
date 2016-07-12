@@ -1,23 +1,12 @@
-<h2>Ride a bike that you like</h2>
-
-<div class="input-group">
-    <input type="text" class="form-control" placeholder="Find your bike...">
-    <span class="input-group-btn">
-   		<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-    </span>
-</div>
+<h2>"Ride a bike that you like"</h2>
 
 <div class="featured">
 	<h3>This Weeks Featured Bike</h3>
 		<div ng-repeat="bike in main.data">
-			<ul class="featuredBike">
-				<li class="featuredBikeList">{{bike.name}}
-				</li>
-				<li class="featuredBikeList">{{bike.price}}
-				</li>
-				<li class="featuredBikeList"><img ng-src="{{bike.image}}">
-				</li>
-			</ul>
+				<img class="featuredBike" ng-src="{{bike.image}}">
+				<p class="featuredBikeList">{{bike.name}}</p>
+				<p class="featuredBikeList">{{bike.price | currency}}</p>
+			
 		</div>
 </div>
 

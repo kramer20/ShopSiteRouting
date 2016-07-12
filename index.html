@@ -16,24 +16,31 @@
 	<script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="https://use.fontawesome.com/247c14072a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Delius|Love+Ya+Like+A+Sister" rel="stylesheet">
 </head>
 
 <body>
        
-    <div class="container">
+    <div class="container-fluid">
         <div class="row header">
-            <div class="col-lg-12">
-                <header><h1>Bob's Bikes</h1></header> 
-                   <div ui-view="nav">
-                   </div> 
+            <div class="col-md-12">
+                <h1>Bob's Bikes</h1> 
             </div>
-            <div class="col-lg-12" ui-view="main">
+
+            <div class="col-md-6" ui-view="nav">
+            </div> 
+            <div class="col-md-6" ui-view="search">      
+            </div>  
+            
+        </div>
+        <div class="col-md-12" ui-view="main">
 
             </div>
-        </div>
     </div>
 
-
+    <footer>
+        <small>© Copyright 2058, Bikes Rock</small>
+    </footer>
 	<!--link to JS file-->
 	<script src="js/main.js"></script>
 	<script src="js/factories/logger.js"></script>

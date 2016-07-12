@@ -18,6 +18,9 @@
 		      'nav': {
 		        templateUrl: '../views/partials/nav.html',
 		      },
+		      'search': {
+		        templateUrl: '../views/partials/search.html',
+		      },
 		  },
 	    })
 	    .state('category', {
@@ -45,7 +48,7 @@
 		        templateUrl: '../views/partials/nav.html',
 		      },
 		  },
-	    });
+	    })
 	    .state('detail', {
       	url: '/detail',
       	views: {

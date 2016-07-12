@@ -19,7 +19,7 @@
 
         var details3 = {
         price:205,
-        description:"Peter sagan shimano stoked pedal strava, gear shuttup legs hillclimb trek IWBMATTKYT cross country downhill. UCI lycra alpe du huez through axle. ",
+        description:"Peter sagan shimano stoked pedal strava, gear shuttup legs hillclimb trek IWBMATTKYT cross country downhill. UCI lycra alpe du huez through axle.",
        }
 
         var details4 = {
