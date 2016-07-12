@@ -102,4 +102,5 @@ footer {
 
 input {
   max-width: 400px;
-  font-family: "Delius", cursive; }
+  font-family: "Delius", cursive;
+  float: left; }
