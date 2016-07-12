@@ -46,6 +46,19 @@
 		      },
 		  },
 	    });
+	    .state('detail', {
+      	url: '/detail',
+      	views: {
+      		'main': {
+		        templateUrl: '../views/detail.html',
+		        controller: 'DetailController',
+		        controllerAs: 'detail'
+		      },
+		      'nav': {
+		        templateUrl: '../views/partials/nav.html',
+		      },
+		  },
+	    });
 	});
 })();
 
